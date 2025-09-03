@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "glowberryexpansion:blue_cave_vines_tip" }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:alternative",
+          "terms": [
+            { "condition": "minecraft:match_tool", "predicate": { "items": ["minecraft:shears"] } },
+            { "condition": "minecraft:match_tool", "predicate": { "enchantments": [ { "enchantment": "minecraft:silk_touch", "levels": { "min": 1 } } ] } }
+          ]
+        }
+      ]
+    }
+  ]
+}

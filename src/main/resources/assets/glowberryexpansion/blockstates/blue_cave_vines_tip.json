@@ -1,0 +1,12 @@
+{
+  "multipart": [
+    {
+      "when": { "berries": true },
+      "apply": { "model": "glowberryexpansion:block/blue_cave_vines_tip_with_berry" }
+    },
+    {
+      "when": { "berries": false },
+      "apply": { "model": "glowberryexpansion:block/blue_cave_vines_tip" }
+    }
+  ]
+}

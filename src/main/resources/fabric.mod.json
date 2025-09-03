@@ -1,0 +1,48 @@
+{
+	"schemaVersion": 1,
+	"id": "glowberryexpansion",
+	"version": "${version}",
+	"name": "Glowberry Expansion",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"TinyTaru"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/glowberryexpansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.tinytaru.glowberryexpansion.GlowberryExpansion",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.tinytaru.glowberryexpansion.GlowberryExpansionClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"glowberryexpansion.mixins.json",
+		{
+			"config": "glowberryexpansion.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
