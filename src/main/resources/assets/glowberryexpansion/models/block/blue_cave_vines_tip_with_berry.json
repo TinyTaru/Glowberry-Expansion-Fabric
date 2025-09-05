@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cave_vines",
+  "parent": "minecraft:block/cave_vines_berries",
   "textures": {
     "vine": "minecraft:block/cave_vines",
     "berries": "glowberryexpansion:block/blue_cave_vines_tip_with_berry"
