@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cave_vines_berries",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "vine": "minecraft:block/cave_vines",
-    "berries": "glowberryexpansion:block/blue_cave_vines_tip_with_berry"
+    "cross": "glowberryexpansion:block/blue_cave_vines_tip_with_berry",
+    "particle": "glowberryexpansion:block/blue_cave_vines_tip_with_berry"
   }
 }

@@ -1,5 +1,6 @@
 package com.tinytaru.glowberryexpansion
 
+import com.tinytaru.glowberryexpansion.item.BlueGlowBerryItem
 import net.minecraft.item.Item
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
@@ -14,7 +15,7 @@ object ModItems {
 
     // 1) Make the item instance. Settings() lets you tweak stack size, food, etc.
     val GLOWSTAFF: Item = Item(Item.Settings().maxCount(1)) // 1 per stack
-    val BLUEGLOWBERRY: Item = Item(Item.Settings().maxCount(64).food(FoodComponent.Builder().hunger(2).saturationModifier(0.1f).build())) // 1 per stack
+    val BLUEGLOWBERRY: Item = BlueGlowBerryItem(Item.Settings().maxCount(64).food(FoodComponent.Builder().hunger(2).saturationModifier(0.1f).build()))
     // 2) Register items with Minecraft's registry
     fun registerAll() {
         register("glowstaff", GLOWSTAFF)
